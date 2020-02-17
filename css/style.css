@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,500,600|Sacramento&display=swap');
 
+/* ALL */
 body{
     margin: 0;
     padding: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+}
+h1{
+    text-align: center;
+    color:#ff6464;
+    font-size: 5em;
+    margin-top: 28vh;
+    margin-bottom: 5px;
+    font-family: 'Sacramento', cursive;
+}
+h2{
+    padding: 0;
+    margin: 0;
+}
+h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+hr{
+    border: dotted #ffffff;
+    border-bottom: none;
+    width: 4%;
+    margin: 10px auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+
 }
 .top-container{
     background: #01024e;
@@ -19,14 +46,7 @@ body{
     height: 100%;
     
 }
-h1{
-    text-align: center;
-    color:#ff6464;
-    font-size: 5em;
-    margin-top: 28vh;
-    margin-bottom: 5px;
-    font-family: 'Sacramento', cursive;
-}
+
 .sub-head{
     color:#ff6464;
     font-size: 2.5rem;
@@ -34,15 +54,7 @@ h1{
     font-weight: normal;
     margin: 0;
 }
-h2,h3{
-    font-family: 'Montserrat', sans-serif;
-}
-hr{
-    border: dotted #ffffff;
-    border-bottom: none;
-    width: 4%;
-    margin: 10px auto;
-}
+
 header{
     width: 80%;
     margin: 0 auto;
@@ -56,49 +68,41 @@ header{
 .nav-links li a:hover{
     color: rgb(241, 211, 211);
 }
-.cloud-top{
-    width: 22vw;
-    position: absolute;
-    left: 5vw;
-    top: 5vh;
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
-.cloud-bottom{
-    width: 20vw;
-    position: absolute;
-    bottom: 5vh;
-    right: 20px;
-
-}
-
-/* .mountain>img{
-    height: 768px;
-    width: 1368px;
-    position: absolute;
-    left: 0;
-    top: 42px;
-} */
 .middle-container{
-    background: #58508d;
-    color: white;
+    background: #cbdedf;
+    /* background: #58508d; */
+    /* color: white; */
 }
+#about{
+    padding-top: 20px;
+    background: #58508d;
+    color: #fff;
+}
+
 .profile>img{
     position: relative;
     width: 100px;
     margin: 50px  auto 10px;
 }
 .profile{
-    width: 40%;
+    width: 60%;
     margin:0 auto 40px;
     
 }
 .skills{
-    background: #cbdedf;
+    background: #58508d;
+    /* background: #cbdedf; */
+    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: black;
 }
 .skill-row{
-    width: 40%;
+    width: 60%;
     margin: 60px auto;
 }
 .skill-row> img{
@@ -119,20 +123,14 @@ header{
     text-align:right;
 }
 .contact-me{
-    width: 40%;
+    width: 60%;
     margin: 50px auto 0;
     padding-bottom: 40px;
 }
-.nav-links{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+#projects{
+    padding: 20px 0;
 }
-a{
-    text-decoration: none;
-    color: white;
 
-}
 .contact-me>p{
     padding-bottom: 40px;
 }
@@ -187,9 +185,6 @@ a{
     }
     header{
         width: 100%;
-    }
-    .top-container{
-        height: 70vh;
     }
     .line {
         width: 30px;
