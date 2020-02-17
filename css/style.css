@@ -188,6 +188,9 @@ a{
     header{
         width: 100%;
     }
+    .top-container{
+        height: 70vh;
+    }
     .line {
         width: 30px;
         height: 3px;
