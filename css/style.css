@@ -162,17 +162,29 @@ a{
 
 .blur-fore{
     z-index: 1;
-    
     visibility: visible;
     height: 100vh;
     width: 100vw;
-    background:rgba(112, 138, 167, 0.5);
-    transition: 0.3s ease-in-out;
-    filter: blur(10px);
+    background:rgba(27, 26, 26, 0.5);
     position: fixed;
 }
 
 @media(max-width : 768px){
+    h1{
+        text-align: center;
+        color:#ff6464;
+        font-size: 3.5rem;
+        margin-top: 28vh;
+        margin-bottom: 5px;
+        font-family: 'Sacramento', cursive;
+    }
+    .sub-head{
+        color:#ff6464;
+        font-size: 1.8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        margin: 0;
+    }
     header{
         width: 100%;
     }
@@ -201,6 +213,7 @@ a{
         justify-content: center;
         z-index: 2;
         background: rgba(39, 63, 62, 0.5);
+        padding: 0;
     }
     .nav-links li{
         margin-top: 50px;
@@ -211,8 +224,7 @@ a{
     }
 }
 @media (min-width : 768px){
-    .blur-fore{
-        
+    .blur-fore{ 
         filter: blur(0);
     }
 }
