@@ -80,7 +80,7 @@ header{
 }
 #about{
     padding-top: 20px;
-    background: #58508d;
+    background: #27496d;
     color: #fff;
 }
 
@@ -95,20 +95,33 @@ header{
     
 }
 .skills{
-    background: #58508d;
     /* background: #cbdedf; */
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+}
+.skills h2{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .skill-row{
-    width: 60%;
-    margin: 60px auto;
+    background: #172d44;
+    width: 20%;
+    margin: 40px auto;
+    padding: 30px;
+}
+.skill-row:nth-child(odd){
+    background: #122335;
 }
 .skill-row> img{
     width: 100px;
 }
-.skl1>img{
+/* .skl1>img{
     float: left;
     margin-right: 10px;
 }
@@ -121,7 +134,7 @@ header{
 }
 .skl2{
     text-align:right;
-}
+} */
 .contact-me{
     width: 60%;
     margin: 50px auto 0;
@@ -175,6 +188,12 @@ header{
         margin-top: 28vh;
         margin-bottom: 5px;
         font-family: 'Sacramento', cursive;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    .skill-row{
+        width: 30%;
     }
     .sub-head{
         color:#ff6464;
