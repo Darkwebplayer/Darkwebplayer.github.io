@@ -40,6 +40,9 @@ a{
     height: 100vh;
     overflow: hidden;
 }
+.foreground>p{
+    padding-bottom: 20px;
+}
 .foreground{
     position: absolute;
     width: 100%;
@@ -58,12 +61,14 @@ a{
 header{
     width: 80%;
     margin: 0 auto;
+    margin-top:30px;
 }
 .nav-links li a{
     padding: 10px;
     font-family: 'Montserrat', cursive;
     font-weight: 600;
     font-size: 1.3rem;
+    
 }
 .nav-links li a:hover{
     color: rgb(241, 211, 211);
@@ -109,14 +114,20 @@ ul{
     padding: 0;
     margin: 0;
 }
+
 .skill-row{
     background: #172d44;
     width: 20%;
     margin: 40px auto;
     padding: 30px;
+    border-radius: 5px;
+    box-shadow: #203e5e 5px 5px 10px 1px;
 }
-.skill-row:nth-child(odd){
-    background: #122335;
+.skill-row:hover{
+    background: #32557a;
+}
+.skills-row ul li{
+    border: 1px solid #bc5090;
 }
 .skill-row> img{
     width: 100px;
@@ -191,9 +202,11 @@ ul{
     }
     .skills{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .skill-row{
-        width: 30%;
+        width: 35%;
     }
     .sub-head{
         color:#ff6464;
