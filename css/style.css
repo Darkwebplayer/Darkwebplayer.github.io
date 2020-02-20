@@ -87,9 +87,12 @@ nav {
 }
 
 .nav-link {
-    color: #fff;
+    color:#ffffff;
     font-size: 1.5rem;
     padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 2;
 }
 
 .nav-link:hover {
@@ -198,6 +201,9 @@ nav {
 .project>img:hover {
     filter: brightness(80%);
 }
+.pTitle{
+    color: rgb(0, 0, 0);
+}
 
 #projects {
     padding: 20px 0;
@@ -208,6 +214,21 @@ nav {
     background: #27496d;
     color: #fff;
 }
+
+
+/* Scroll Bar Customization  */
+#scrollStyle::-webkit-scrollbar{
+ width: 8px;
+background-color: rgba(221, 170, 170, 0.3));
+
+box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+#scrollStyle::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
 
 @media(max-width:768px) {
     h1 {
@@ -221,7 +242,7 @@ nav {
         height: 30px;
         position: fixed;
         right: 30px;
-        top: 50px;
+        top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
