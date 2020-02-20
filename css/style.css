@@ -8,21 +8,25 @@ body {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
-h1{
+
+h1 {
     text-align: center;
-    color:#ff6464;
+    color: #ff6464;
     font-size: 5rem;
     margin-top: 24vh;
     font-family: 'Sacramento', cursive;
 }
-h2{
+
+h2 {
     padding: 0;
     margin: 0;
 }
-h2,h3{
+
+h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
-hr{
+
+hr {
     border: dotted #d8c0c0;
     border-bottom: none;
     width: 4%;
@@ -44,34 +48,38 @@ nav {
     width: 100%;
     height: 60px;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
-.top-container{
+
+.top-container {
     background: #01024e;
     position: relative;
     margin: 0;
     height: 100vh;
     overflow: hidden;
 }
-.foreground>p{
+
+.foreground>p {
     padding-bottom: 20px;
 }
-.foreground{
+
+.foreground {
     position: absolute;
     width: 100%;
     height: 100%;
-    
 }
 
-.sub-head{
-    color:#ff6464;
+.sub-head {
+    color: #ff6464;
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     margin: 0;
 }
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -89,28 +97,30 @@ nav {
     transition: 0.2s ease-in;
 }
 
-.profile>img{
+.profile>img {
     position: relative;
     width: 100px;
-    margin: 50px  auto 10px;
-}
-.profile{
-    width: 60%;
-    margin:0 auto 40px;
-    
+    margin: 50px auto 10px;
 }
 
-.skills{
+.profile {
+    width: 60%;
+    margin: 0 auto 40px;
+}
+
+.skills {
     /* background: #cbdedf; */
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
 }
-.skills h2{
+
+.skills h2 {
     width: 100%;
 }
-.skill-row{
+
+.skill-row {
     background: #172d44;
     width: 20%;
     min-width: 200px;
@@ -119,26 +129,30 @@ nav {
     border-radius: 5px;
     box-shadow: #203e5e 5px 5px 10px 1px;
 }
-.skill-row:hover{
+
+.skill-row:hover {
     background: #32557a;
 }
-.skills-row ul li{
+
+.skills-row ul li {
     border: 1px solid #bc5090;
 }
-.skill-row> img{
+
+.skill-row>img {
     width: 100px;
 }
-.contact-me{
+
+.contact-me {
     width: 60%;
     margin: 50px auto 0;
     padding-bottom: 40px;
 }
 
-
-.contact-me>p{
+.contact-me>p {
     padding-bottom: 40px;
 }
-.btn{
+
+.btn {
     color: white;
     border: none;
     padding: 10px;
@@ -146,58 +160,67 @@ nav {
     background: #ff6361;
     font-family: 'Montserrat', sans-serif;
 }
-.btn:hover{
+
+.btn:hover {
     background: #bc5090;
 }
-.bottom-container{
+
+.bottom-container {
     background: #396362;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
 }
-.bottom-container> a{
+
+.bottom-container>a {
     margin: auto 20px;
 }
-.projectsGrid{
+
+.projectsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-.project{
+
+.project {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.project>.btn{
+
+.project>.btn {
     width: 200px;
 }
 
-.project>img:hover{
+.project>img:hover {
     filter: brightness(80%);
 }
-#projects{
+
+#projects {
     padding: 20px 0;
 }
-#about{
+
+#about {
     padding-top: 20px;
     background: #27496d;
     color: #fff;
 }
+
 @media(max-width:768px) {
-    h1{
+    h1 {
         font-size: 3.5rem;
     }
-    h2,h3{
+    .sub-head {
         font-size: 1.5rem;
     }
     .hamburger {
         width: 35px;
         height: 30px;
         position: fixed;
-        right: 50px;
+        right: 30px;
         top: 50px;
         display: flex;
         flex-direction: column;
@@ -209,6 +232,9 @@ nav {
         height: 3px;
         background-color: #fff;
         transition: all 0.8s;
+    }
+    .line {
+        box-shadow: 3px 3px 5px 0.1px #333 ;
     }
     .change.line-1 {
         transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -231,22 +257,23 @@ nav {
         transition: 0.8s all;
         z-index: 1;
     }
-    .change.nav-list{
+    .change.nav-list {
         right: 0;
     }
-    .skills{
+    .skills {
         flex-direction: column;
     }
 }
 
-@media (max-width:930px){
-    .projectsGrid{
+@media (max-width:930px) {
+    .projectsGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width:768px){
-    .projectsGrid{
+
+@media (max-width:768px) {
+    .projectsGrid {
         display: grid;
         grid-template-columns: 1fr;
     }
