@@ -331,7 +331,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        height: 100vh;
+        height: 90vh;
         width: 100vw;
         right: -100vw;
         position: fixed;
