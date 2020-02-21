@@ -15,7 +15,7 @@ h1 {
     text-align: center;
     color: #ff6464;
     font-size: 5rem;
-    margin-top: 24vh;
+    margin-top: 15vh;
     font-family: 'Sacramento', cursive;
 }
 
@@ -60,13 +60,13 @@ nav {
     background: #01024e;
     position: relative;
     margin: 0;
-    height: 90vh;
+    height: 100vh;
     opacity: 1;
     overflow: hidden;
     
 }
 
-.bottomBr{
+.bottomBar{
     display: none;
 }
 .bgShapes{
@@ -120,7 +120,7 @@ nav {
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    margin: 0;
+    margin-bottom: 30px;
 }
 
 .nav-list {
@@ -143,10 +143,18 @@ nav {
     transition: 0.2s ease-in;
 }
 
-.profile>img {
+.proPic {
     position: relative;
     width: 100px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
     margin: 35px auto 10px;
+    border-radius: 50%;
+    background-position: center;
+}
+.proPic>img{
+    width: 100px;
 }
 
 .profile {
@@ -283,13 +291,16 @@ nav {
     h1 {
         font-size: 3.5rem;
     }
+    .top-container{
+        height: 90vh;
+    }
     .sub-head {
         font-size: 1.5rem;
     }
     .hamburger {
         width: 35px;
         height: 30px;
-        position: absolute;
+        position: fixed;
         right: 30px;
         top: 30px;
         display: flex;
