@@ -183,7 +183,8 @@ nav {
     margin: 40px auto;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: #203e5e 5px 5px 10px 1px;
+    /* neu morphism */
+    box-shadow: 9px 9px 16px rgba(4, 29, 66, 0.5), -9px -9px 16px    rgba(29, 78, 97, 0.5);
 }
 
 .skill-row:hover {
@@ -194,20 +195,30 @@ nav {
     border: 1px solid #bc5090;
 }
 
-.skill-row>img {
-    width: 100px;
+.skill-1-icon{
+    margin: 20px 0;
+    color: #19d461;
+}
+.skill-2-icon{
+    margin: 20px 0;
+    color: #75b8df;
+}
+.skill-3-icon{
+    margin: 20px 0;
+    color: #d41951;
 }
 
 .contact-me {
-    width: 60%;
-    margin: 50px auto 0;
-    padding-bottom: 40px;
+    
     scroll-snap-align: start;
 }
 
-.contact-me>p {
-    padding-bottom: 40px;
+.contactM{
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
+
 
 .btn {
     color: white;
@@ -247,15 +258,17 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
 }
 
-.project>.btn {
+.projBtn {
     width: 200px;
 }
 
-.project>img:hover {
+.projectMain>img:hover {
     filter: brightness(80%);
 }
+
 
 .pTitle {
     color: rgb(0, 0, 0);

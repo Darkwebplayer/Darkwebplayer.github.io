@@ -81,7 +81,7 @@
             <div class="skills">
 
                 <div class="skill-row skl1">
-                    <img class="" src="https://image.flaticon.com/icons/svg/1197/1197511.svg" alt="skillimage">
+                    <i class="fas fa-paint-brush fa-3x skill-1-icon"> </i>
                     <h3>Front End</h3>
                     <ul class="skillList">
                         <li>HTML5</li>
@@ -91,7 +91,7 @@
                     </ul>
                 </div>
                 <div class="skill-row skl2">
-                    <img class="" src="https://image.flaticon.com/icons/svg/1197/1197511.svg" alt="skillimage2">
+                    <i class="fas fa-laptop-code fa-3x skill-2-icon"></i>
                     <h3>Back End</h3>
                     <div class="skillPoints">
                         <ul class="skillList">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="skill-row skl1">
-                    <img class="" src="https://image.flaticon.com/icons/svg/1197/1197511.svg" alt="skillimage2">
+                    <i class="fas fa-database fa-3x skill-3-icon"></i>
                     <h3>Databases</h3>
                     <ul class="skillList">
                         <li>Postgres</li>
@@ -117,38 +117,37 @@
             <div class="projectsGrid">
                 <div class="project">
                     <a href="#">
-                        <img src="https://i.picsum.photos/id/235/300/200.jpg" alt="project img">
-                        <div class="projSub">
-                            <h4 class="pTitle">Project Title</h4>
+                        <div class="projectMain">
 
-                            <p class="pDescription"></p>
+                            <img src="https://i.picsum.photos/id/235/300/200.jpg" class="projImg" alt="project img">
+
                         </div>
-                        <a href="" class="btn projBtn">View</a>
+
+                        <h4 class="pTitle">Project Title</h4>
+                        <a href="#" class="btn projBtn">View</a>
                     </a>
                 </div>
                 <div class="project">
-                    <img src="https://i.picsum.photos/id/236/300/200.jpg" alt="project img">
-                    <h4 class="pTitle">Project Title</h4>
-                    <p class="pDescription"></p>
-                    <a href="" class="btn projBtn">View</a>
+                    <a href="#">
+                        <div class="projectMain">
+                            <img src="https://i.picsum.photos/id/235/300/200.jpg" alt="project img">
+                            <p class="pDescription"></p>
+                        </div>
+
+                        <h4 class="pTitle">Project Title</h4>
+                        <a href="#" class="btn projBtn">View</a>
+                    </a>
                 </div>
                 <div class="project">
-                    <img src="https://i.picsum.photos/id/237/300/200.jpg" alt="project img">
-                    <h4 class="pTitle">Project Title</h4>
-                    <p class="pDescription"></p>
-                    <a href="" class="btn projBtn">View</a>
-                </div>
-                <div class="project">
-                    <img src="https://i.picsum.photos/id/238/300/200.jpg" alt="project img">
-                    <h4 class="pTitle">Project Title</h4>
-                    <p class="pDescription"></p>
-                    <a href="" class="btn projBtn">View</a>
-                </div>
-                <div class="project">
-                    <img src="https://i.picsum.photos/id/239/300/200.jpg" alt="project img">
-                    <h4 class="pTitle">Project Title</h4>
-                    <p class="pDescription"></p>
-                    <a href="" class="btn projBtn">View</a>
+                    <a href="#">
+                        <div class="projectMain">
+                            <img src="https://i.picsum.photos/id/235/300/200.jpg" alt="project img">
+                            <p class="pDescription"></p>
+                        </div>
+
+                        <h4 class="pTitle">Project Title</h4>
+                        <a href="#" class="btn projBtn">View</a>
+                    </a>
                 </div>
         </section>
         <hr>
@@ -156,11 +155,21 @@
             <div class="contact-me">
                 <h2>Get In Touch</h2>
                 <ul class="contactM">
+                    <div class="contact-M">
+                    <li>HEllo</li>
+                    <li>HEllo</li>
+                    <li>HEllo</li>
+                    <li>HEllo</li>
+                    </div>
+                    <div class="hire-Me">
+                    <h3>Hire Me On</h3>
                     <li><a class="btn" href="mailto:amrithanadhm@email.com">Email</a></li>
                     <li>GitHub</li>
                     <li>Twitter</li>
                     <li>LinkedIn</li>
                     <li>Telegram</li>
+                    </div>
+                    
                 </ul>
 
             </div>
@@ -168,15 +177,21 @@
     </div>
     </div>
     <div class="bottom-container">
-
         <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/">Twitter</a>
         <a class="footer-link" href="https://binftec.github.io">Website</a>
-        <p>&copf; 2019 Amrithanadh M.</p>
+        <p>&copf;
+            <script>
+                const dt = new Date;
+                document.write(dt.getFullYear());
+
+
+            </script> Amrithanadh M.</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </script>>
     <script src="https://kit.fontawesome.com/226043b1b4.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 
