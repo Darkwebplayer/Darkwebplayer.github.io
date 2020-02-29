@@ -78,9 +78,9 @@
             </div>
             <hr>
             <h2>My Skills</h2>
-            <div class="skills">
+            <div class="skills lax" data-lax-preset="fadeIn zoomIn">
 
-                <div class="skill-row skl1">
+                <div class="skill-row lax skl1">
                     <i class="fas fa-paint-brush fa-3x skill-1-icon"> </i>
                     <h3>Front End</h3>
                     <ul class="skillList">
@@ -90,7 +90,7 @@
                         <li>Javascript</li>
                     </ul>
                 </div>
-                <div class="skill-row skl2">
+                <div class="skill-row lax skl2">
                     <i class="fas fa-laptop-code fa-3x skill-2-icon"></i>
                     <h3>Back End</h3>
                     <div class="skillPoints">
@@ -101,7 +101,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="skill-row skl1">
+                <div class="skill-row lax skl1">
                     <i class="fas fa-database fa-3x skill-3-icon"></i>
                     <h3>Databases</h3>
                     <ul class="skillList">
@@ -154,25 +154,46 @@
         <section id="contact">
             <div class="contact-me">
                 <h2>Get In Touch</h2>
-                <ul class="contactM">
+                <div class="contactM">
                     <div class="contact-M">
-                    <li>HEllo</li>
-                    <li>HEllo</li>
-                    <li>HEllo</li>
-                    <li>HEllo</li>
+                        <h3>Find me On</h3>
+                        <div class="contact-option">
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>Email
+                            </a>
+
+
+                            <a href="#">
+                                <i class="fab fa-telegram"></i>Telegram
+                            </a>
+                            <a href="https://github.com/darkwebplayer">
+                                <i class="fab fa-github"></i>Github
+                            </a>
+                            <a href="https://github.com/darkwebplayer">
+                                <i class="fab fa-gitlab"></i>Gitlab
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>Facebook
+                            </a>
+                        </div>
+
+
+
                     </div>
                     <div class="hire-Me">
-                    <h3>Hire Me On</h3>
-                    <li><a class="btn" href="mailto:amrithanadhm@email.com">Email</a></li>
-                    <li>GitHub</li>
-                    <li>Twitter</li>
-                    <li>LinkedIn</li>
-                    <li>Telegram</li>
+                        <h3>Hire Me On</h3>
+                        <div class="hire-option">
+                            
+                            <a href="https://www.fiverr.com/amrithandhm">
+                                <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/129_Fiverr-512.png" alt="Fiverr Icon"> 
+                                <h4>Fiverr</h4>
+                            </a>
+                        </div>
+                        
                     </div>
-                    
-                </ul>
-
+                </div>
             </div>
+
         </section>
     </div>
     </div>
@@ -193,8 +214,21 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </script>>
     <script src="https://kit.fontawesome.com/226043b1b4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+            console.log("onLoad");
 
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
 </body>
 
 </html>
